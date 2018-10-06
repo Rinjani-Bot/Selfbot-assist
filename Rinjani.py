@@ -71,8 +71,8 @@ switch = {
     'dinvite':False,
     'wblacklist':False,
     'dblacklist':False,
-    'wpeki':False,
-    'dpeki':False,
+    'wrin':False,
+    'drin':False,
     'cp1':False,
     'cp2':False,
     'cp3':False,
@@ -936,7 +936,7 @@ def bot(op):
                                 Ticket = cl.reissueGroupTicket(op.param1)
                                 print("Bots4 Joined Open Qr 2")
 
-            if op.param3 in settings["PEKI"]:
+            if op.param3 in settings["Rinjani"]:
                 print("admin was kicked")
                 if op.param2 in Bots or op.param2 in settings["Rinjani"]:
                    kk.findAndAddContactsByMid(op.param3)
@@ -1036,26 +1036,26 @@ def bot(op):
                             switch["dblacklist"] = False
                             cl.sendMessage(msg.to,"Dia tak berdosa")
                             print("MID not in blacklist")
-                   elif switch["wpeki"] == True:
-                       if msg.contentMetadata["mid"] in settings["PEKI"]:
+                   elif switch["wrin"] == True:
+                       if msg.contentMetadata["mid"] in settings["Rinjani"]:
                             cl.sendMessage(msg.to,"Kita udah temenan")
-                            switch["wpeki"] = False
+                            switch["wrin"] = False
                             print("MID Already in the wl")
                        else:
-                            settings["PEKI"][msg.contentMetadata["mid"]] = True
-                            switch["wpeki"] = False
+                            settings["Rinjani"][msg.contentMetadata["mid"]] = True
+                            switch["wrin"] = False
                             cl.sendMessage(msg.to,"Sudah dijadikan teman")
                             print([msg.contentMetadata["mid"]] + " Ditambahkan ke daftar teman")
 
-                   elif switch["dpeki"] == True:
-                       if msg.contentMetadata["mid"] in settings["PEKI"]:
-                            del settings["PEKI"][msg.contentMetadata["mid"]]
+                   elif switch["drin"] == True:
+                       if msg.contentMetadata["mid"] in settings["Rinjani"]:
+                            del settings["Rinjani"][msg.contentMetadata["mid"]]
                             cl.sendMessage(msg.to,"Teman terlupakan")
-                            switch["dpeki"] = False
+                            switch["drin"] = False
                             print([msg.contentMetadata["mid"]] + " dilupakan")
 
                        else:
-                            switch["dpeki"] = False
+                            switch["drin"] = False
                             cl.sendMessage(msg.to,"Dia bukan temanmu")
                             print("MID not in wl")
                    elif settings["detailsContact"] == True:
@@ -1397,7 +1397,7 @@ def bot(op):
                                     cl.sendMessage(msg.to,"Amit lurrr")
                                 else:
                                     for target in targets:			
-                                      if target not in settings["PEKI"]:
+                                      if target not in settings["Rinjani"]:
                                         try:
                                             cl.kickoutFromGroup(msg.to,[target])
                                         except:
@@ -1726,7 +1726,7 @@ def bot(op):
                                         lists.append(mention["M"])
                                 for ls in lists:
                                     try:
-                                        del settings["PEKI"][ls]
+                                        del settings["Rinjani"][ls]
                                         cl.sendMessage(msg.to,"Teman telah dilupakan")
                                         print("[Notif] Delete wl Success")
                                     except:
@@ -1743,7 +1743,7 @@ def bot(op):
                                         lists.append(mention["M"])
                                 for ls in lists:
                                     try:
-                                        settings["PEKI"][ls] = True
+                                        settings["Rinjani"][ls] = True
                                         cl.sendMessage(msg.to,"Teman ditambahkan")
                                         print("[Notif] WL Success")
                                     except:
@@ -1760,9 +1760,9 @@ def bot(op):
                                     cl.sendMessage(msg.to,"gak ada orang")
                                 else:
                                     for target in targets:
-                                         if target not in settings["PEKI"]:
+                                         if target not in settings["Rinjani"]:
                                             try:
-                                                settings["PEKI"][target] = True
+                                                settings["Rinjani"][target] = True
                                                 cl.sendMessage(msg.to,"Teman ditambahkan")
                                             except:
                                                 pass
@@ -1777,7 +1777,7 @@ def bot(op):
                                     cl.sendMessage(msg.to,"gak ada orang")
                                 else:
                                     for target in targets:
-                                         if target not in settings["PEKI"] or target not in Bots:
+                                         if target not in settings["Rinjani"] or target not in Bots:
                                             try:
                                                 settings["blacklist"][target] = True
                                                 cl.sendMessage(msg.to,"Anda ternoda")
@@ -1891,11 +1891,11 @@ def bot(op):
                                         mc += "~  " +cl.getContact(mi_d).displayName + "\n"
                                     cl.sendMessage(msg.to,mc)
                         elif text.lower() == 'temanku':
-                                if settings["PEKI"] == {}:
+                                if settings["Rinjani"] == {}:
                                     cl.sendMessage(msg.to,"Kamu gak punya teman :(")
                                 else:
                                     cl.sendMessage(msg.to,"Ini daftar temanmu:")
-                                    mc = "●Sahabat PeKI● \n\n"
+                                    mc = "●Sahabat Rinjani● \n\n"
                                     for mi_d in settings["PEKI"]:
                                         mc += "~  " +cl.getContact(mi_d).displayName + "\n"
                                     cl.sendMessage(msg.to,mc)
@@ -1909,10 +1909,10 @@ def bot(op):
                             switch["dblacklist"] = True
                             cl.sendMessage(msg.to,"Mana yang mau diampuni ?")
                         elif text.lower() == 'tambah teman':
-                            switch["wpeki"] = True
+                            switch["wrin"] = True
                             cl.sendMessage(msg.to,"kirim kontak orangnya")
                         elif text.lower() == 'hapus teman':
-                            switch["dpeki"] = True
+                            switch["drin"] = True
                             cl.sendMessage(msg.to,"Mana yang mau dilupakan ?")
                        #-------------------------------------------------------#
                         elif "/invite2: " in msg.text.lower():
@@ -2007,7 +2007,7 @@ def bot(op):
                             except:
                                 cl.sendMessage(msg.to,"Gagal Mencari...")
 
-                        elif text.lower() == "respon":
+                        elif text.lower() == "respons":
                             s = cl.getProfile()
                             s1 = ki.getProfile()
                             s2 = kk.getProfile()
@@ -2382,14 +2382,14 @@ def bot(op):
                                     cl.sendMessage(msg.to,"Akses invite sudah dibebaskan")
                                     print("[Perintah]Allow invite")
 
-                        elif text.lower() == 'peki agresif':
+                        elif text.lower() == 'rinjani agresif':
                              try:
                                 settings["BlockACCESS"][msg.to] = True
                                 cl.sendMessage(msg.to,"Proteksi mode agresif")
                                 print("[Perintah]block kses")
                              except:
                                 cl.sendMessage(msg.to,"Proteksi sudah ditingkatkan")
-                        elif text.lower() == 'peki normal':
+                        elif text.lower() == 'Rinjani normal':
                                 try:
                                     del settings["BlockACCESS"][msg.to]
                                     cl.sendMessage(msg.to,"Keamanan mode normal")
