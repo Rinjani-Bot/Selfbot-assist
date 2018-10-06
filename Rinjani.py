@@ -27,7 +27,7 @@ ks = LineClient(authToken='EnuFXhanijULkFFoP0sf.TFNjkysE9CP3h/sJLfoDJW.WOVC9zBGf
 ks.log("Auth Token : " + str(ks.authToken))
 
 
-settingsOpen = codecs.open("ivan.json","r","utf-8")
+settingsOpen = codecs.open("rinjani.json","r","utf-8")
 poll = LinePoll(cl)
 clientProfile = cl.getProfile()
 clientSettings = cl.getSettings()
@@ -194,123 +194,123 @@ def mentionMembers(to, mid):
 
 
 def help():
-    helpMessage = "[⏺]⚒[PeKI]Self-BOT G3⚒[⏺]" + "\n" + \
-                  "\n" + "---Command Set---\n\n" + \
-                  "⏺Main on/off" + "\n" + \
-                  "⏺Block/Allow invite" + "\n" + \
-                  "⏺Block/Allow url" + "\n" + \
-                  "⏺Chat on/off" + "\n" + \
-                  "⏺Greet on/off" + "\n" + \
-                  "⏺[Auto/Manual]respon" + "\n" + \
-                  "⏺[Auto/Manual] join" + "\n" + \
-                  "⏺peki normal/agresif" + "\n" + \
-                  "⏺Kontak on/off" + "\n" + \
-                  "⏺Name lock/unlock" + "\n" + \
-                  "⏺Autoread" + "\n" + \
-                  "⏺Manualread"
+    helpMessage = "╞[RINJANI BOT]" + "\n" + \
+                  "\n" + "[Command Set]\n\n" + \
+                  "╞[Main on/off" + "\n" + \
+                  "╞[Block/Allow invite" + "\n" + \
+                  "╞[Block/Allow url" + "\n" + \
+                  "╞[Chat on/off" + "\n" + \
+                  "╞[Greet on/off" + "\n" + \
+                  "╞[Auto/Manual]respon" + "\n" + \
+                  "╞[Auto/Manual] join" + "\n" + \
+                  "╞[Rin normal/Rinjani" + "\n" + \
+                  "╞[Kontak on/off" + "\n" + \
+                  "╞[Name lock/unlock" + "\n" + \
+                  "╞[Autoread" + "\n" + \
+                  "╞[Manualread"
     return helpMessage
 
 def help2():
-    helpMessage2 = "[⏺]⚒[PeKI]SELFBOT G3⚒[⏺]" + "\n" + \
-                  "\n" + "---Command Self---\n\n" + \
-                  "⏺Dulurrr" + "\n" + \
-                  "⏺Cok" + "\n" + \
-                  "⏺Banlist" + "\n" + \
-                  "⏺/Invite2:「GID」" + "\n" + \
-                  "⏺Lihat grup" + "\n" + \
-                  "⏺Respon" + "\n" + \
-                  "⏺/Left:「GID」" + "\n" + \
-                  "⏺/undang:「MID」" + "\n" + \
-                  "⏺Mangat." + "\n" + \
-                  "⏺Buka link" + "\n" + \
-                  "⏺Tutup link" + "\n" + \
-                  "⏺Nama bot/2-4:「NAMA」" + "\n" + \
-                  "⏺All name:「NAMA」" + "\n" + \
-                  "⏺Cancel" + "\n" + \
-                  "⏺Cek sambutan" + "\n" + \
-                  "⏺Cek left" + "\n" + \
-                  "⏺Cek add" + "\n" + \
-                  "⏺Undang orang 「SC」" + "\n" + \
-                  "⏺Add ban 「SC」" + "\n" + \
-                  "⏺Unban 「SC」" + "\n" + \
-                  "⏺Pancal 「TAG」" + "\n" + \
-                  "⏺Sikat 「TAG」" + "\n" + \
-                  "⏺Sampul 「TAG」" + "\n" + \
-                  "⏺Kepo 「TAG」" + "\n" + \
-                  "⏺Status:「STATUS」" + "\n" + \
-                  "⏺Gn:「NAMA」" + "\n" + \
-                  "⏺Add wl「TAG」" + "\n" + \
-                  "⏺Del wl「TAG」" + "\n" + \
-                  "⏺Wl all" + "\n" + \
-                  "⏺Ban all" + "\n" + \
-                  "⏺Unban all" + "\n" + \
-                  "⏺Tambah teman「SC」" + "\n" + \
-                  "⏺Hapus teman「SC」" + "\n" + \
-                  "⏺Temanku" + "\n" + \
-                  "⏺Fbc「PESAN BC」" + "\n" + \
-                  "⏺Gbc「PESAN BC」" + "\n" + \
-                  "⏺Allbc「PESAN BC」" + "\n" + \
-                  "⏺Cbot「TAG」" + "\n" + \
-                  "⏺C1-4「TAG」" + "\n" + \
-                  "⏺/Pundhut「TAG」" + "\n" + \
-                  "⏺/Cipok「TAG」" + "\n" + \
-                  "⏺PP 1-4「IMAGE」" + "\n" + \
-                  "⏺@Bubar " + "\n" + \
-                  "⏺Sikat lurrr" + "\n" + \
-                  "⏺Takbir !!!" + "\n" + \
-                  "⏺/Sambutan:「TEXT」" + "\n" + \
-                  "⏺/Pesan left:「TEXT」" + "\n" + \
-                  "⏺/Pesan add:「TEXT」" + "\n" + \
-                  "⏺Ampuni 「TAG」" + "\n" + \
-                  "⏺Bann 「TAG」"
+    helpMessage2 = "╞[RINJANI BOT]" + "\n" + \
+                  "\n" + "[Command Self]\n\n" + \
+                  "╞[Sayang" + "\n" + \
+                  "╞[Cok" + "\n" + \
+                  "╞[Banlist" + "\n" + \
+                  "╞[/Invite2:「GID」" + "\n" + \
+                  "╞[Lihat grup" + "\n" + \
+                  "╞[Respons" + "\n" + \
+                  "╞[/Left:「GID」" + "\n" + \
+                  "╞[/undang:「MID」" + "\n" + \
+                  "╞[Mangat." + "\n" + \
+                  "╞[Buka link" + "\n" + \
+                  "╞[Tutup link" + "\n" + \
+                  "╞[Nama bot/2-4:「NAMA」" + "\n" + \
+                  "╞[All name:「NAMA」" + "\n" + \
+                  "╞[Cancel" + "\n" + \
+                  "╞[Cek sambutan" + "\n" + \
+                  "╞[Cek left" + "\n" + \
+                  "╞[Cek add" + "\n" + \
+                  "╞[Undang orang 「SC」" + "\n" + \
+                  "╞[Add ban 「SC」" + "\n" + \
+                  "╞[Unban 「SC」" + "\n" + \
+                  "╞[Pancal 「TAG」" + "\n" + \
+                  "╞[Sikat 「TAG」" + "\n" + \
+                  "╞[Sampul 「TAG」" + "\n" + \
+                  "╞[Kepo 「TAG」" + "\n" + \
+                  "╞[Status:「STATUS」" + "\n" + \
+                  "╞[Gn:「NAMA」" + "\n" + \
+                  "╞[Add wl「TAG」" + "\n" + \
+                  "╞[Del wl「TAG」" + "\n" + \
+                  "╞[Wl all" + "\n" + \
+                  "╞[Ban all" + "\n" + \
+                  "╞[Unban all" + "\n" + \
+                  "╞[Tambah teman「SC」" + "\n" + \
+                  "╞[Hapus teman「SC」" + "\n" + \
+                  "╞[Temanku" + "\n" + \
+                  "╞[Fbc「PESAN BC」" + "\n" + \
+                  "╞[Gbc「PESAN BC」" + "\n" + \
+                  "╞[Allbc「PESAN BC」" + "\n" + \
+                  "╞[Cbot「TAG」" + "\n" + \
+                  "╞[C1-4「TAG」" + "\n" + \
+                  "╞[/Pundhut「TAG」" + "\n" + \
+                  "╞[/Cipok「TAG」" + "\n" + \
+                  "╞[PP 1-4「IMAGE」" + "\n" + \
+                  "╞[@Bubar " + "\n" + \
+                  "╞[Sikat lurrr" + "\n" + \
+                  "╞[Takbir !!!" + "\n" + \
+                  "╞[/Sambutan:「TEXT」" + "\n" + \
+                  "╞[/Pesan left:「TEXT」" + "\n" + \
+                  "╞[/Pesan add:「TEXT」" + "\n" + \
+                  "╞[Ampuni 「TAG」" + "\n" + \
+                  "╞[Bann 「TAG」"
     return helpMessage2
 
 def help3():
-    helpMessage3 = "[⏺]⚒[PeKI]SELFBOT G3⚒[⏺]" + "\n" + \
-                  "\n" + "---Command Fun---\n\n" + \
-                  "⏺Me" + "\n" + \
-                  "⏺Sp" + "\n" + \
-                  "⏺Ganti pp" + "\n" + \
-                  "⏺Ganti pp grup" + "\n" + \
-                  "⏺Mid 「TAG」" + "\n" + \
-                  "⏺Runtime" + "\n" + \
-                  "⏺My set" + "\n" + \
-                  "⏺Deteksi cctv" + "\n" + \
-                  "⏺Intip" + "\n" + \
-                  "⏺,Pamit dulu ya" + "\n" + \
-                  "⏺Gid" + "\n" + \
-                  "⏺Midku" + "\n" + \
-                  "⏺Creator" + "\n" + \
-                  "⏺Empunya" + "\n" + \
-                  "⏺/Ig「ID IG」" + "\n" + \
-                  "⏺/Bilang「KALIMAT」" + "\n" + \
-                  "⏺Jadwal sholat:「LOKASI」" + "\n" + \
-                  "⏺Cuaca「LOKASI」" + "\n" + \
-                  "⏺/Lirik「JUDUL LAGU」" + "\n" + \
-                  "⏺/Film「TITLE」" + "\n" + \
-                  "⏺/Wiki「KEYWORD」" + "\n" + \
-                  "⏺.Crash" + "\n" + \
-                  "⏺/Nonton:「JUDUL」" + "\n" + \
-                  "⏺/music「JUDUL」" + "\n" + \
-                  "⏺/mp3:「JUDUL」" + "\n" + \
-                  "⏺/video:「JUDUL」" + "\n" + \
-                  "⏺「----MIMIC" + "\n" + \
-                  "⏺Halo kak「TAG」" + "\n" + \
-                  "⏺Kopi kak" + "\n" + \
-                  "⏺Kopi abis" + "\n" + \
-                  "⏺Udahan「TAG」" + "\n" + \
-                  "⏺Targetku" + "\n" + \
-                  "⏺------」" + "\n" + \
-                  "⏺Ginfo" + "\n" + \
-                  "⏺Haloo" + "\n" + \
-                  "⏺Cek lokasi「LOKASI」"
+    helpMessage3 = "╞[RINJANI BOT]" + "\n" + \
+                  "\n" + "[Command Fun]\n\n" + \
+                  "╞[Me" + "\n" + \
+                  "╞[Sp" + "\n" + \
+                  "╞[Ganti pp" + "\n" + \
+                  "╞[Ganti pp grup" + "\n" + \
+                  "╞[Mid 「TAG」" + "\n" + \
+                  "╞[Runtime" + "\n" + \
+                  "╞[My set" + "\n" + \
+                  "╞[Deteksi cctv" + "\n" + \
+                  "╞[Intip" + "\n" + \
+                  "╞[,Pamit dulu ya" + "\n" + \
+                  "╞[Gid" + "\n" + \
+                  "╞[Midku" + "\n" + \
+                  "╞[Creator" + "\n" + \
+                  "╞[Empunya" + "\n" + \
+                  "╞[/Ig「ID IG」" + "\n" + \
+                  "╞[/Bilang「KALIMAT」" + "\n" + \
+                  "╞[Jadwal sholat:「LOKASI」" + "\n" + \
+                  "╞[Cuaca「LOKASI」" + "\n" + \
+                  "╞[/Lirik「JUDUL LAGU」" + "\n" + \
+                  "╞[/Film「TITLE」" + "\n" + \
+                  "╞[/Wiki「KEYWORD」" + "\n" + \
+                  "╞[.Crash" + "\n" + \
+                  "╞[/Nonton:「JUDUL」" + "\n" + \
+                  "╞[/music「JUDUL」" + "\n" + \
+                  "╞[/mp3:「JUDUL」" + "\n" + \
+                  "╞[/video:「JUDUL」" + "\n" + \
+                  "╞[MIMIC]" + "\n" + \
+                  "╞[Halo kak「TAG」" + "\n" + \
+                  "╞[Kopi kak" + "\n" + \
+                  "╞[Kopi abis" + "\n" + \
+                  "╞[Udahan「TAG」" + "\n" + \
+                  "╞[Targetku" + "\n" + \
+                  "╞[Bacot lu」" + "\n" + \
+                  "╞[Ginfo" + "\n" + \
+                  "╞[Haloo" + "\n" + \
+                  "╞[Cek lokasi「LOKASI」"
 
     return helpMessage3
 
 def backupData():
     try:
         backup = settings
-        f = codecs.open('ivan.json','w','utf-8')
+        f = codecs.open('rinjani.json','w','utf-8')
         json.dump(backup, f, sort_keys=True, indent=4, ensure_ascii=False)
         return True
     except Exception as error:
@@ -353,7 +353,7 @@ def bot(op):
                     if op.param2 in Bots:
                         pass
                         print("Bot mengubah nama")
-                    elif op.param2 in settings["PEKI"]:
+                    elif op.param2 in settings["Rinjani"]:
                         pass
                         print("whitelist mengubah nama")
                     else:
@@ -380,7 +380,7 @@ def bot(op):
         if op.param3 == "4":
           if op.param1 in settings["protecturl"]:
             if op.param1 in settings["main"]:
-             if op.param2 in Bots or op.param2 in settings["PEKI"]:
+             if op.param2 in Bots or op.param2 in settings["Rinjani"]:
                 pass
              else:
                  random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
@@ -391,7 +391,7 @@ def bot(op):
                  cl.updateGroup(X)
                  settings["blacklist"][op.param2] = True
             else:
-             if op.param2 in Bots or op.param2 in settings["PEKI"]:
+             if op.param2 in Bots or op.param2 in settings["Rinjani"]:
                 pass
              else:
                  cl.reissueGroupTicket(op.param1)
@@ -495,7 +495,7 @@ def bot(op):
         if op.type == 13:
          if op.param1 in settings["autocancel"]:
           if op.param1 in settings["main"]:
-            if op.param2 in Bots or op.param2 in settings["PEKI"]:
+            if op.param2 in Bots or op.param2 in settings["Rinjani"]:
                pass
             else:
                 Inviter = op.param3.replace("",',')
@@ -505,7 +505,7 @@ def bot(op):
                 random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
                 settings["blacklist"][op.param2] = True
           else:
-            if op.param2 in Bots or op.param2 in settings["PEKI"]:
+            if op.param2 in Bots or op.param2 in settings["Rinjani"]:
                pass
             else:
                 Inviter = op.param3.replace("",',')
@@ -526,7 +526,7 @@ def bot(op):
               cl.sendMessage(op.param1, settings["greeting"])
         if op.type == 17:
             if op.param1 in BlockACCESS:
-              if op.param2 not in Bots or op.param2 not in settings["PEKI"]:
+              if op.param2 not in Bots or op.param2 not in settings["Rinjani"]:
                     random.choice(DEF).kickoutFromGroup(op.param1,[op.param2])
                     settings["blacklist"][op.param2] = True
               else:
@@ -938,7 +938,7 @@ def bot(op):
 
             if op.param3 in settings["PEKI"]:
                 print("admin was kicked")
-                if op.param2 in Bots or op.param2 in settings["PEKI"]:
+                if op.param2 in Bots or op.param2 in settings["Rinjani"]:
                    kk.findAndAddContactsByMid(op.param3)
                    kk.inviteIntoGroup(op.param1,[op.param3])
                 else:
@@ -947,7 +947,7 @@ def bot(op):
                     settings["blacklist"][op.param2] = True
                     cl.kickoutFromGroup(op.param1,[op.param2])
 
-            if op.param2 not in Bots or op.param2 not in settings["PEKI"]:
+            if op.param2 not in Bots or op.param2 not in settings["Rinjani"]:
              if op.param1 in settings["main"]:
                 random.choice(DEF).kickoutFromGroup(op.param1,[op.param2])
                 settings["blacklist"][op.param2] = True
@@ -956,13 +956,13 @@ def bot(op):
         if op.type == 22:
             print ("[ 22 ] NOTIFIED INVITE INTO ROOM")
             if settings["autoLeave"] == True:
-                cl.sendMessage(op.param1, "Jancok rasah invite aku")
+                cl.sendMessage(op.param1, "Kampret invite aku")
                 cl.leaveRoom(op.param1)
 
         if op.type == 24:
             print ("[ 24 ] NOTIFIED LEAVE ROOM")
             if settings["autoLeave"] == True:
-                cl.sendMessage(op.param1, "Apaan ini jancok")
+                cl.sendMessage(op.param1, "Apaan ini Goblok")
                 cl.leaveRoom(op.param1)
 
         if op.type == 25:
@@ -1089,45 +1089,45 @@ def bot(op):
                         return
                     else:
                         # Basic command
-                        if text.lower() == "key1":
+                        if text.lower() == "help1":
                             helpMessage = help()
                             cl.sendMessage(to, str(helpMessage))
-                        if text.lower() == "key2":
+                        if text.lower() == "help2":
                             helpMessage2 = help2()
                             cl.sendMessage(to, str(helpMessage2))
-                        if text.lower() == "key3":
+                        if text.lower() == "help3":
                             helpMessage3 = help3()
                             cl.sendMessage(to, str(helpMessage3))
                         elif text.lower() == "me":
                             cl.sendContact(to, sender)
                         elif text.lower() == "reboot":
-                            cl.sendMessage(to, "Sekedap mbah")
+                            cl.sendMessage(to, "Sabat mblo")
                             settings["restartPoint"] = to
                             restartBot()
                         elif text.lower() == "sp":
                             start = time.time()
-                            cl.sendMessage("u08c2dd7a54d7d8718a6827d22afcfbc0", '.')
+                            cl.sendMessage("u78643d09e42a36836a17cc918963a8b7", '.')
                             elapsed_time = time.time() - start
                             cl.sendMessage(to, "%s♻Detik♻" % (elapsed_time))
                             start = time.time()
-                            ki.sendMessage("u08c2dd7a54d7d8718a6827d22afcfbc0", '.')
+                            ki.sendMessage("u78643d09e42a36836a17cc918963a8b7", '.')
                             elapsed_time = time.time() - start
                             ki.sendMessage(to, "%s♻Detik♻" % (elapsed_time))
                             start = time.time()
-                            kk.sendMessage("u08c2dd7a54d7d8718a6827d22afcfbc0", '.')
+                            kk.sendMessage("u78643d09e42a36836a17cc918963a8b7", '.')
                             elapsed_time = time.time() - start
                             kk.sendMessage(to, "%s♻Detik♻" % (elapsed_time))
                             start = time.time()
-                            kc.sendMessage("u08c2dd7a54d7d8718a6827d22afcfbc0", '.')
+                            kc.sendMessage("u78643d09e42a36836a17cc918963a8b7", '.')
                             elapsed_time = time.time() - start
                             kc.sendMessage(to, "%s♻Detik♻" % (elapsed_time))
                             start = time.time()
-                            ks.sendMessage("u08c2dd7a54d7d8718a6827d22afcfbc0", '.')
+                            ks.sendMessage("u78643d09e42a36836a17cc918963a8b7", '.')
                             elapsed_time = time.time() - start
                             ks.sendMessage(to, "%s♻Detik♻" % (elapsed_time))
                         elif text.lower() == "sp1":
                             start = time.time()
-                            cl.sendMessage("u08c2dd7a54d7d8718a6827d22afcfbc0", '.')
+                            cl.sendMessage("u78643d09e42a36836a17cc918963a8b7", '.')
                             elapsed_time = time.time() - start
                             cl.sendMessage(to, "%s♻Detik♻" % (elapsed_time))
                         elif text.lower() == ",pamit dulu ya":
@@ -1366,7 +1366,7 @@ def bot(op):
                             cl.sendContact(to, Bmid)
                             cl.sendContact(to, Cmid)
                             cl.sendContact(to, Dmid)
-                            cl.sendContact(to, "udddfc87642a28dab28d5673eb1d3da5f")
+                            cl.sendContact(to, "u78643d09e42a36836a17cc918963a8b7")
 
                         elif text.lower() == "ginfo":
                             if msg.toType == 2:
@@ -1516,7 +1516,7 @@ def bot(op):
                                     cl.sendMessage(msg.to,"Amit lurrr")
                                 else:
                                     for target in targets:
-                                      if target not in settings["PEKI"]:
+                                      if target not in settings["Rinjani"]:
                                         try:
                                             random.choice(KAC).kickoutFromGroup(msg.to,[target])
                                         except:
@@ -1678,14 +1678,14 @@ def bot(op):
                             cl.sendMessage(to, "Berhasil broadcast ke {} teman".format(str(len(friends))))
 
                         elif text.lower() == "creator":
-                            cl.sendContact(to, "ueca0f5770e41759eef19b268985bde11")
-                            cl.sendMessage(msg.to,"●⚒[PeKI]PeKI Bot⚒●")  
-                        elif text.lower() == "empunya":		
-                            cl.sendContact(to, "u4d28c76d0e3abd959b575fcac821e15f")
-                            cl.sendContact(to, "uc17663698bf499304c0b424c2dbaf754")
-                            cl.sendContact(to, "u3608fe707f0c172ce936fe90cc5d8341")
-                            cl.sendContact(to, "ua7a787fe059eed9f2a65a4dea2528b3b")
-                            cl.sendMessage(msg.to,"●⚒[PeKI]Bot Creator⚒●")
+                            cl.sendContact(to, "╞u78643d09e42a36836a17cc918963a8b7")
+                            cl.sendMessage(msg.to,"[TEAM RINJANI BOT")  
+                       # elif text.lower() == "empunya":		
+                           # cl.sendContact(to, "u4d28c76d0e3abd959b575fcac821e15f")
+                          #  cl.sendContact(to, "uc17663698bf499304c0b424c2dbaf754")
+                           # cl.sendContact(to, "u3608fe707f0c172ce936fe90cc5d8341")
+                           # cl.sendContact(to, "ua7a787fe059eed9f2a65a4dea2528b3b")
+                            #cl.sendMessage(msg.to,"TEAM RINJANI BOT")
                         elif text.lower() == "danyange":
                             try:
                                 group = cl.getGroup(msg.to)
@@ -2224,8 +2224,8 @@ def bot(op):
                                 ret_ += "\n╚══[ Total {} Siders From {} Viewers ]".format(str(len(read["ROM"])), str(len(read["readMember"])))
                                 ret_ += "\nPoint Set On : \n{}".format(str(time))
                         # Example remote command
-                        elif text.lower() == "my set":
-                                 md = "   ⏺♻⚒[PeKI] Set Plan⚒♻⏺ \n\n"
+                        elif text.lower() == "settings":
+                                 md = "   Rinjani bot \n\n"
                                  if settings["chat"] == True: md+=" ♻􀔃􀆑lock􏿿 Bot chat      → ON\n"
                                  else: md+=" ♻ ⛔ Bot chat      → OFF\n"
                                  if wait["copy"] == True: md+=" ♻􀔃􀆑lock􏿿 Copy      → ON\n"
@@ -2252,7 +2252,7 @@ def bot(op):
                                  else: md+=" ♻ ⛔ Contact read  → OFF\n"
                                  if msg.to in settings['pname']: md+=" ♻􀔃􀆑lock􏿿 NameLOCK      → ON"
                                  else: md+=" ♻ ⛔ NameLOCK      → OFF\n"
-                                 cl.sendMessage(msg.to,md + "\n       ●⚒[PeKI]PeKI Bot⚒●   ")
+                                 cl.sendMessage(msg.to,md + "\n       [TEAM RINJANI BOT   ")
 
                         elif text.lower() == "autoread":
                           if settings["autoRead"] == True:
